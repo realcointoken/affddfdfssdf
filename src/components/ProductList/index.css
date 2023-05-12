@@ -1,0 +1,128 @@
+.products {
+}
+
+.productCategoryWrapper {
+  max-width: 60rem;
+  margin: 0 auto;
+  width: 95%;
+  position: relative;
+}
+
+.productCategoryWrapper::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  top: 26px;
+  background: var(--transparent-light-2);
+  height: 1px;
+}
+
+.productCategoryWrapper {
+  margin-bottom: 70px;
+}
+
+.categoryTitle {
+  width: fit-content;
+  padding-right: 20px;
+  background-color: var(--bg-color);
+}
+
+.categoryList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.2rem;
+}
+
+@media screen and (max-width: 840px) {
+  .categoryList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .categoryList {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.productCard {
+  cursor: pointer;
+  min-width: 14rem;
+  overflow: hidden;
+  border-radius: 1.2rem;
+  background: var(--card-color);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid transparent;
+  transition: 0.1s;
+}
+
+.productCard:hover {
+  border-color: var(--brand-color);
+}
+
+.productCard img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+/* ------- Specific for products ------- */
+
+.aigramProductCard {
+  padding-top: 61%;
+}
+
+.aigramProductCard .promoImage {
+  width: 110%;
+  position: absolute;
+  left: -5%;
+  top: 0;
+}
+
+/* ---------------- */
+
+.textContent {
+  padding: 1rem;
+}
+
+.description,
+.subdescription {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.subtitle {
+  margin: 1.4rem 0 0.7rem;
+  font-size: 1.1rem;
+}
+
+.textContent.hasBuyButton {
+  margin-bottom: 4rem;
+}
+
+.boxLink {
+  width: 100%;
+  display: flex;
+  bottom: 0;
+  position: absolute;
+}
+.buyBtn {
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+}
+
+.newProduct img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+}

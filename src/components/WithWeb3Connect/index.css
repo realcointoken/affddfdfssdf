@@ -1,0 +1,83 @@
+.Web3Connect {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.account {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.accountHeader {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.disconnectButton {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+}
+
+.address {
+  font-size: 1.4rem;
+}
+
+.account .warning {
+  margin: 0 auto;
+  font-size: 1.3rem;
+  max-width: 30rem;
+  margin-top: 1rem;
+}
+
+.networksList {
+  margin: 1rem 0 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.networksList button {
+  margin: 0.2rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.6rem;
+  border: 1px solid var(--transparent-light-1);
+  background-color: var(--transparent-light-3);
+}
+
+.networksList button:not(:last-child) {
+  margin-right: 0.3rem;
+}
+
+@media (max-width: 660px) {
+  .disconnect-btn-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .disconnect-btn-block a {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 510px) {
+  .btn-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media (max-width: 460px) {
+  .accountHeader {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .disconnect-btn-block a {
+    margin-top: 15px;
+  }
+}

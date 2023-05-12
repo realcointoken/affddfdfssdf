@@ -1,0 +1,68 @@
+{
+  "name": "onout_dashboard",
+  "version": "0.1.1",
+  "private": true,
+  "dependencies": {
+    "@metamask/eth-sig-util": "^4.0.0",
+    "@types/node": "^16.7.13",
+    "@types/react": "^17.0.20",
+    "@types/react-dom": "^17.0.9",
+    "@walletconnect/web3-provider": "^1.7.1",
+    "assert": "^2.0.0",
+    "axios": "^0.25.0",
+    "bignumber.js": "^9.0.2",
+    "ethereumjs-util": "^7.1.3",
+    "ethers": "^5.5.3",
+    "fs": "^0.0.1-security",
+    "https-browserify": "^1.0.0",
+    "os": "^0.1.2",
+    "os-browserify": "^0.3.0",
+    "react": "^17.0.2",
+    "react-app-rewired": "^2.1.11",
+    "react-dom": "^17.0.2",
+    "react-ga": "^3.3.0",
+    "react-icons": "^4.3.1",
+    "react-router-dom": "^6.2.2",
+    "react-scripts": "5.0.0",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "typescript": "^4.4.2",
+    "url": "^0.11.0",
+    "web-vitals": "^2.1.0",
+    "web3": "^1.7.0",
+    "web3modal": "^1.9.5"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "serve": "npx serve -s build",
+    "eject": "react-app-rewired eject",
+    "check-domains": "jest tests/checkDemoProjects.test.ts --detectOpenHandles"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/jest": "^27.0.1",
+    "jest": "^27.0.0",
+    "puppeteer": "^11.0.0",
+    "serve": "^13.0.2"
+  }
+}

@@ -1,0 +1,16 @@
+.statistics {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 1.4rem;
+  border-radius: 1.2rem;
+  background-color: var(--card-color);
+}
+.statisticsWrapper{
+  padding: 0 10px;
+}
+.graphUp {
+  color: greenyellow;
+}
+.graphDown {
+  color: red;
+}

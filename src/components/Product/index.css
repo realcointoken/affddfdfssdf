@@ -1,0 +1,181 @@
+.product {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 1.4rem;
+  font-size: 1.4rem;
+  border-radius: 1.2rem;
+  background-color: var(--card-color);
+}
+
+.header {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  padding: 0;
+  margin: 0;
+}
+
+.externalLink {
+  text-decoration: none;
+  color: var(--color);
+}
+
+.buttonsContaner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.buttonsContaner :not(:last-child) {
+  margin-right: 1rem;
+}
+
+.externalLinkIcon {
+  font-size: 1rem;
+}
+
+.error,
+.warning,
+.notice {
+  padding: 0.6rem;
+  border-radius: 0.6rem;
+}
+
+.paymentLink {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.promoCodeInput {
+  margin-bottom: 0.6rem;
+  width: 95%;
+  padding: 5px 10px;
+  border-radius: 10px;
+  outline: none;
+  background-color: var(--transparent-light-2);
+  border: 1px solid var(--transparent-light-2);
+  cursor: text;
+  font-size: 20px;
+  display: none;
+}
+
+.promoCodeInput:focus {
+  border: 1px solid var(--transparent-light-1);
+}
+.promoCodeInput.active {
+  display: block;
+}
+.promoCodeInput.disabled {
+  border: none;
+  caret-color: transparent;
+}
+.promoCodeText {
+  cursor: pointer;
+  margin-top: 1.6rem;
+  margin-bottom: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  color: var(--link-color);
+  transition: 0.3s;
+}
+.linkToNetworkPolygon {
+  margin-bottom: 0.6rem;
+  color: var(--color);
+  display: none;
+}
+.linkToNetworkPolygon.active {
+  display: block;
+}
+.promocodeLabel {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.promocode {
+  margin-top: 15px;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: text;
+  font-size: 20px;
+  cursor: pointer;
+  caret-color: transparent;
+}
+.backBtn {
+  padding: 0.6rem 1rem;
+}
+
+.paymentBtn {
+  margin-top: 0.5rem;
+}
+
+.paymentBtn:disabled {
+  opacity: 0.5;
+}
+
+.titlePromocode {
+  margin: 0px 0px 10px;
+}
+
+.notesSpan {
+  cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+  font-size: 21px;
+}
+
+.notesSpan:hover {
+  color: #acaab3;
+}
+
+.notesSpan.active {
+  color: #acaab3;
+}
+
+.bonusNotice {
+  margin: 1.6rem 0 0;
+}
+.formOnoutLink {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.tokenIcon {
+  width: 1.2rem;
+  margin-right: 0.3rem;
+}
+
+.youWillGetTitle {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.youWillGetItems {
+  margin-top: 10px;
+}
+
+.youWillGetText {
+  font-size: 18px;
+  margin: 10px 0;
+}
+.youWillGetLink {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 840px) {
+  .product {
+    max-width: 100%;
+    width: 80%;
+  }
+}
+
+
+.downloadLinkHolder {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
